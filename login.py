@@ -110,3 +110,7 @@ def Log():
 
     Quit = tk.Button(Login, text = "Quit", width="10", command = Login.destroy, bd = '3',  font = ('Times', 12, 'bold'), bg='black', fg='white',relief='groove', justify = 'center', pady='5')
     Quit.place(anchor ='sw',rely=1,relx=0.775)
+    
+    
+    
+log()
