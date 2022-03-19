@@ -33,29 +33,21 @@ def Register():
     
     # Connecting to database with registration form
     def database(arg=None):
-        
-        #defining insert values
-        
-        name = "Momo"
-        email = "demo@gmail.com"
-        mobile = "12345678"
-        username = "mom123"
-        password = "12345678"
       
         # Getting entries
-#         name = name_entry.get()
-#         email = email_entry.get()
+        name = name_entry.get()
+        email = email_entry.get()
 
-#         # Mobile Number converting to Integer
-#         mobile = mobile_entry.get()
-#         try:
-#             mobile = int(mobile)
-#         except:
-#             ms.showerror('Oops', 'Please Enter a Valid Phone Number !!!')
+        # Mobile Number converting to Integer
+        mobile = mobile_entry.get()
+        try:
+            mobile = int(mobile)
+        except:
+            ms.showerror('Oops', 'Please Enter a Valid Phone Number !!!')
 
-#         username = username_entry.get()
-#         password = password_entry.get()
-#         confirm = confirm_entry.get()
+        username = username_entry.get()
+        password = password_entry.get()
+        confirm = confirm_entry.get()
 
         # Validating Entries
         validation = []
@@ -176,4 +168,6 @@ def Register():
 
     Quit = tk.Button(Reg, text = "Quit", width="10", command = Reg.destroy, bd = '3',  font = ('Times', 12, 'bold'), bg='black', fg='white',relief='groove', justify = 'center', pady='5')
     Quit.place(anchor ='sw',rely=1,relx=0.84)
-Regsiter()
+
+
+Register()
