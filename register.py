@@ -33,21 +33,29 @@ def Register():
     
     # Connecting to database with registration form
     def database(arg=None):
+        
+        #defining insert values
+        
+        name = "Momo"
+        email = "demo@gmail.com"
+        mobile = "12345678"
+        username = "mom123"
+        password = "12345678"
       
         # Getting entries
-        name = name_entry.get()
-        email = email_entry.get()
+#         name = name_entry.get()
+#         email = email_entry.get()
 
-        # Mobile Number converting to Integer
-        mobile = mobile_entry.get()
-        try:
-            mobile = int(mobile)
-        except:
-            ms.showerror('Oops', 'Please Enter a Valid Phone Number !!!')
+#         # Mobile Number converting to Integer
+#         mobile = mobile_entry.get()
+#         try:
+#             mobile = int(mobile)
+#         except:
+#             ms.showerror('Oops', 'Please Enter a Valid Phone Number !!!')
 
-        username = username_entry.get()
-        password = password_entry.get()
-        confirm = confirm_entry.get()
+#         username = username_entry.get()
+#         password = password_entry.get()
+#         confirm = confirm_entry.get()
 
         # Validating Entries
         validation = []
