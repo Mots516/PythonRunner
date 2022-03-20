@@ -9,7 +9,7 @@ import tkinter as tk
 import sqlite3
 from login import Log
 from register import Register
-from PIL import ImageTk, Image
+
 
 
 # Creating Widget
